@@ -103,8 +103,8 @@ export const AnalyticsDashboard = () => {
     return data;
   };
 
-  const calculateGrowth = (data: any[], key: string) => {
-    if (data.length < 2) return 0;
+  const calculateGrowth = (data: any[], key: string): string => {
+    if (data.length < 2) return "0";
     const current = data[data.length - 1][key];
     const previous = data[data.length - 2][key];
     return ((current - previous) / previous * 100).toFixed(1);

@@ -9,7 +9,7 @@ import BarcodeScanner from "@/components/BarcodeScanner";
 import FinancialManagement from "@/components/FinancialManagement";
 import CustomerRelationshipManagement from "@/components/CustomerRelationshipManagement";
 import DeliveryTracking from "@/components/DeliveryTracking";
-import NotificationSystem from "@/components/NotificationSystem";
+import { NotificationCenter } from "@/components/NotificationSystem";
 import { 
   Scan, 
   DollarSign, 
@@ -166,7 +166,7 @@ const BusinessTools = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <NotificationSystem />
+                <NotificationCenter />
               </CardContent>
             </Card>
           </TabsContent>
